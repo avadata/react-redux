@@ -3,6 +3,8 @@ export const FETCH_POSTS = 'FETCH_POSTS';
 export const CREATE_POST = 'CREATE_POST';
 export const FETCH_POST = 'FETCH_POST';
 export const DELETE_POST = 'DELETE_POST';
+export const LOGIN_USER = 'LOGIN_USER';
+
 const ROOT_URL = 'http://reduxblog.herokuapp.com'
 const API_KEY = '?key=KESHAK123';
 
@@ -37,5 +39,16 @@ export function deletePost(id, callback) {
   return {
     type: DELETE_POST,
     payload: id
+  }
+}
+
+export function loginUser(values, callback){
+  console.log('user info data ', values);
+  if(values.username){
+    callback();
+  }
+  return{
+    type: LOGIN_USER,
+    payload: values
   }
 }
