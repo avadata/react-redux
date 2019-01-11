@@ -4,3 +4,16 @@
     margin-top: -7px;
     margin-right: 10px;
 }
+.form-container{
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    width: 82%;
+    top: 50%
+}
+body, html {
+    height: 100%;
+}
+.card-pop{
+    box-shadow: -1px -1px 4px #e6e4e4, 1px 1px 6px #e6e4e4;
+}

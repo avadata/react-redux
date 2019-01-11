@@ -30,10 +30,10 @@ class LoginForm extends Component{
     render(){
         const {handleSubmit} = this.props;
         return(
-            <div className="container">
-                <div className="row">
+            <div className="container h-100">
+                <div className="row h-100 justify-content-center align-items-center">
                     <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                        <div className="card card-signin my-5">
+                        <div className="card card-pop">
                             <div className="card-body">
                                 <div className="text-xs-left">
                                     <h3>Login user</h3>
